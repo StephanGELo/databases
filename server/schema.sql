@@ -8,14 +8,14 @@ CREATE TABLE messages (
   text VARCHAR(200) NOT NULL,
   userId INTEGER NOT NULL,
   roomname VARCHAR(30) NOT NULL,
-  PRIMARY KEY (id)
+  PRIMARY KEY (ID)
 );
 
 /* Create other tables and define schemas for them here! */
 CREATE TABLE users (
   id INTEGER NOT NULL AUTO_INCREMENT,
   username VARCHAR(30) NOT NULL,
-  PRIMARY KEY (id)
+  PRIMARY KEY (ID)
 );
 
 /*  Execute this file from the command line by typing:
@@ -26,6 +26,6 @@ CREATE TABLE users (
  This is the line that works: 
  mysql -u root < + \. (sourse - execute an SQL script file. takes a file name as an argument)
  + absolute path to file.sql, that is:
- 
+
  mysql -u root < \. /Users/Blackeagle/Desktop/hrsf88-databases copy/server/schema.sql
  */
